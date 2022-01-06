@@ -17,11 +17,12 @@ public class ReverseNames {
         String name; //stores the name entered by the user
         String reverseName = ""; //stores the name when it has been reversed
         int indexOfSpace;//stores the index of the space
+        int nameLength; //stores the length of the name
         
         System.out.println("Reverse Name by Hunter Quantz\n");
         System.out.print("What is your name? ");
         name = stdIn.nextLine();
-        System.out.println(name);
+        nameLength = name.length();
         
         indexOfSpace = name.indexOf(" ");
         
@@ -29,6 +30,11 @@ public class ReverseNames {
             reverseName += name.charAt(i);
         }
         
+        reverseName += " ";
+        
+        for(int i = nameLength - 1; i > indexOfSpace; i--){
+            reverseName += name.charAt(i);
+        }
         System.out.println(reverseName);
     }//end main
 
