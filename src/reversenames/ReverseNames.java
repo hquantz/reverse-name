@@ -49,7 +49,7 @@ public class ReverseNames {
             }
         }
 
-        System.out.println(reverseName);
+        System.out.println("It's backwards day! Goodbye " + reverseName);
     }//end main
 
 }//end reversenames class
